@@ -1,0 +1,306 @@
+@import '../variables/main';
+@include resetStyles;
+
+.vista {
+    @media (min-width: 200px){
+        width: 100%;
+    }
+
+    @media (min-width: 1200px){
+        width: 1200px;
+    }
+}
+
+header {
+    background-image: url(../img/fondo4.jpg);
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0 8rem 0;
+
+    @media(max-width: 1200px){
+        padding: 3rem 1.5rem 0 1.5rem;
+    }
+
+    .vista {
+        @include dictarFlex(row, space-between, center);
+    }
+
+    .logo {
+       @include tamañoImg(15rem, auto);
+
+       @media(max-width: 475px){
+            @include tamañoImg(9rem, auto);
+       }
+    }
+
+    nav {
+        width: 50%;
+
+        @media (min-width: 200px) {
+            display: none;
+        }
+
+        @media (min-width: 1200px) {
+            display: block;
+        }
+
+        ul {
+            @include dictarFlex(row, space-between, center);
+        }
+
+        li {
+            text-transform: uppercase;
+
+            a {
+                color: $main-CasiNagro;
+                font-weight: bold;
+                font-size: 1.6rem;
+
+                &:hover{
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    transition: .2s all;
+                }
+            }
+
+            &:nth-of-type(4){
+                div {
+                    width: 2rem;
+                }
+            }
+        }
+    }
+
+}
+.menu-mobile {
+    width: 6rem;
+
+    @media (min-width: 200px) {
+        display: block;
+        width: 4rem;
+    }
+
+    @media (min-width: 1200px) {
+        display: none;
+    }
+
+    div {
+        @include tamañoImg(100%, auto);
+    }
+
+    button {
+        background: transparent;
+        border: none;
+        outline: 0;
+        box-shadow: none !important;
+
+        &:hover, &:focus, &:active {
+            background: transparent;
+            border: none;
+            outline: 0;
+            box-shadow: none !important;
+        }
+    }
+}
+
+.dropdown-menu {
+    background: $main-Amarillo;
+    border: 1px solid $main-CasiVerde;
+}
+
+.acerca {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 8rem 0;
+    background: $main-Cremita;
+
+    .vista {
+        @media(min-width: 200px){
+            @include dictarFlex(column, center, center);
+        }
+
+        @media(min-width: 1200px) {
+            @include dictarFlex(row, space-between, center);
+        }
+    }
+
+    .contenidoacerca {
+        width: 50%;
+
+        @media (max-width: 1200px){
+            width: 100%;
+            padding: 0 1.5rem;
+            padding-top: 4rem;
+            text-align: center;
+        }
+
+        div {
+            width: 100%;
+
+            @media (max-width: 1200px){
+                width: 70vw;
+                margin: 0 auto;
+            }
+        }
+        
+
+
+        p {
+            font-weight: 400;
+            font-size: 2.2rem;
+            margin: 1rem 0 5.5rem 0;
+        }
+
+        a {
+            padding: 1rem 1.5rem;
+            border-radius: 1rem;
+            background: $main-Cremita;
+            color: $main-CasiNagro;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+
+            &:hover {
+                padding: 1.3rem 1.6rem;
+                transition: .2s all;
+            }
+        }
+    }
+}
+
+.contacto {
+    @include dictarFlex(column, center, center);
+    background: $main-CasiNagro;
+    padding: 8rem 0;
+
+    .vista {
+        @include dictarFlex(column, center, center);
+    }
+
+    div {
+        @include dictarFlex(column, center, center);
+        text-align: center;
+
+    }
+
+    ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 6rem;
+        margin-block-end: 2rem;
+
+        @media(max-width: 1200px) {
+            flex-direction: column;
+        }
+
+        li {
+            @include dictarFlex(column, center, center);
+            text-align: center;
+
+            @media(max-width: 1200px) {
+                margin-bottom: 4rem;
+            }
+
+            div {
+                width: 6rem;
+            }
+
+            p {
+                color: $main-Amarillo;
+                margin-top: 2rem;
+                font-size: 1,5rem;
+
+                @media(max-width: 1200px) {
+                    font-size: 2rem;
+                }
+            }
+
+        }
+    }
+}
+.productos {
+    @include dictarFlex(column, center, center);
+    background: $main-rojo;
+    padding: 8rem 0;
+    text-align: center;
+
+    .vista {
+        @include dictarFlex(column, center, center);
+    }
+
+    h2 {
+        font-size: 3.5rem;
+        color: $main-CasiNagro;
+        text-transform: uppercase;
+    }
+    
+    ul {
+        width: 100%;
+        margin-top: 7rem;
+        @include dictarFlex(row, space-between, center);
+        flex-wrap: wrap;
+
+        @media (max-width: 1200px){
+            @include dictarFlex(column, space-between, center);
+        }
+
+        li {
+            flex:  0 0 260px;
+            @include dictarFlex(column, center, center);
+            background: $main-amarillobajo;
+            border-radius: 3.5rem;
+            padding: 2.5rem;
+            margin-bottom: 5rem;
+            box-shadow: 4px 0px 17px 16px rgba($main-CasiNagro,0.30);
+            position: relative;
+
+            @media (max-width: 1200px){
+                width: 400px;
+            }
+
+            @media (max-width: 575px){
+                width: 300px;
+            }
+
+            div {
+                @include tamañoImg(15rem, auto)
+                
+                }
+
+            span {
+                &:first-of-type {
+                    color: $main-CasiNagro;
+                    text-transform: uppercase;
+                    font-size: 1.2rem;
+                    margin-top: 1.9rem;
+
+                    @media (max-width: 1200px){
+                        font-size: 6vw;
+                    }
+                }
+
+                &:last-of-type {
+                    color: $main-CasiNagro;
+                    text-transform: uppercase;
+                    font-size: 2.5rem;
+                    font-weight: 700;
+                    margin: 2rem 0;
+                }
+            }
+
+            button {
+                background: $main-rojo;
+                color: $main-CasiNagro;
+                text-transform: uppercase;
+                padding: 0.8rem 4rem;
+                font-size: 1.1rem;
+                font-weight: 700;
+                font-family: 'Quicksand', sans-serif;
+                border: none;
+                border-radius: 2rem;
+                cursor: pointer;
+            }
+        }
+    }
+}

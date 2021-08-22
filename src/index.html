@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet"  href="./assets/css/styles.css">
+    <title>Cute Bakery</title>
+</head>
+<body>
+    <main id="alto">
+        <header>
+            <div class="vista">
+                <div class="logo">
+                    <img src="./assets/img/cero.png" alt="logo">
+                </div>
+                <div class="btn-group menu-mobile">
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div>
+                            <img src="./assets/img/menu.png" alt="menu movil">
+                        </div>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a href="#acerca">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li>
+                            <a href="#canasto">
+                                <div>
+                                    <img src="./assets/img/canasto.png" alt="canasto">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#acerca">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li>
+                            <a href="#canasto">
+                                    <div>
+                                        <img src="./assets/img/canasto.png" alt="canasto">
+                                    </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="acerca" id="acerca">
+            <div class="vista">
+                <div class="contenidoacerca">
+                    <div>
+                        <img src="./assets/img/ilustracion3.png" alt="panesimagen">
+                    </div>
+                    <p>
+                       "Para sacar provecho a este alimento tan importante, trabajamos con los procesos más adecuados, como fermentaciones lentas, uso de masa madre, formado a mano"
+                    </p>
+                </div>
+                <div class="contenidoacerca">
+                    <div>
+                        <img src="./assets/img/ilustracion1.png" alt="panesimagen2">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacto" id="contacto">
+            <div class="vista">
+                <ul>
+                    <li>
+                        <div>
+                            <img src="./assets/img/envioDorado.png" alt="icono envio">
+                        </div>
+                        <p>Envios sin cargo Tandil, Vela Y Gardey</p>
+                        <p>De lunes a sabados de 9 a 15hs</p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./assets/img/trajetaDorada.png" alt="icono targeta">
+                        </div>
+                        <p>Aceptamos todas las terjetas</p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./assets/img/telefonoDorado.png" alt="icono telefono">
+                        </div>
+                        <p>¿Necesitas ayuda?</p>
+                        <p>Contactanos por telefono o correo</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="productos" id="productos">
+            <div class="vista">
+                <h2>Los mas pedidos de la temporada</h2>
+                <ul>
+                    <li>
+                        <div>
+                            <img src="./assets/img/mercaderia5.jpg" alt="panlactal">
+                        </div>
+                        <span>Pan lactal<br> Varios</span>
+                        <span>$250</span>
+                        <button>Comprar</button>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./assets/img/pan de campo.jpg" alt="pandecampo">
+                        </div>
+                        <span>Pan de Campo</span>
+                        <span>$300</span>
+                        <button>Comprar</button>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./assets/img/pan arabe.jpg" alt="panarabe">
+                        </div>
+                        <span>Pan arabe <br> Por docena</span>
+                        <span>$400</span>
+                        <button>Comprar</button>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./assets/img/mercaderia1.jpg" alt="bizcochos">
+                        </div>
+                        <span>Biscochos salados<br> Por kilo</span>
+                        <span>$800</span>
+                        <button>Comprar</button>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./assets/img/mercaderia6.jpg" alt="alfajores de maicena">
+                        </div>
+                        <span>Alfajorcitos de maicena <br> Por docena</span>
+                        <span>$500</span>
+                        <button>Comprar</button>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./assets/img/mercaderia3.jpg" alt="alfajor artesanal">
+                        </div>
+                        <span>Alfajor artesanal <br>Por docena</span>
+                        <span>$700</span>
+                        <button>Comprar</button>
+                        <div class="outStock"><strong>Solo chocolate blanco</strong></div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <div class="vista">
+                <div class="footer">
+                    <img src="./assets/img/ramita.png" alt="decoracion">
+                </div>
+                <section>
+                    <div>
+                        <h2>🧁Seguinos</h2>
+                        <a href="https://www.instagram.com/panaderiasdelsoltandil" target="_blank"> Instagram</a>
+                        <a href="https://www.facebook.com/panaderiasdelsoltandil" target="_blank"> Facebook</a>
+                    </div>
+                    <div>
+                        <h2>Tambien podes visitarnos</h2>
+                        <span>Fabrica central <br>  Monseñor Andrea 33
+                        </span>
+                    </div>
+                </section>
+                <span></span>
+            </div>
+        </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

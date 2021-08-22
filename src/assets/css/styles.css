@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  width: 100vw;
+  max-width: 100%;
+  max-height: 100%;
+  font-family: "Quicksand", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 200px) {
+  .vista {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .vista {
+    width: 1200px;
+  }
+}
+
+header {
+  background-image: url(../img/fondo4.jpg);
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0 8rem 0;
+}
+@media (max-width: 1200px) {
+  header {
+    padding: 3rem 1.5rem 0 1.5rem;
+  }
+}
+header .vista {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  width: 15rem;
+  height: auto;
+}
+@media (max-width: 475px) {
+  header .logo {
+    width: 9rem;
+    height: auto;
+  }
+}
+header nav {
+  width: 50%;
+}
+@media (min-width: 200px) {
+  header nav {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  header nav {
+    display: block;
+  }
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav li {
+  text-transform: uppercase;
+}
+header nav li a {
+  color: #0a1417;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+header nav li a:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+  transition: 0.2s all;
+}
+header nav li:nth-of-type(4) div {
+  width: 2rem;
+}
+
+.menu-mobile {
+  width: 6rem;
+}
+@media (min-width: 200px) {
+  .menu-mobile {
+    display: block;
+    width: 4rem;
+  }
+}
+@media (min-width: 1200px) {
+  .menu-mobile {
+    display: none;
+  }
+}
+.menu-mobile div {
+  width: 100%;
+  height: auto;
+}
+.menu-mobile button {
+  background: transparent;
+  border: none;
+  outline: 0;
+  box-shadow: none !important;
+}
+.menu-mobile button:hover, .menu-mobile button:focus, .menu-mobile button:active {
+  background: transparent;
+  border: none;
+  outline: 0;
+  box-shadow: none !important;
+}
+
+.dropdown-menu {
+  background: #f5d64e;
+  border: 1px solid #a5c6b1;
+}
+
+.acerca {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 8rem 0;
+  background: #fffa90;
+}
+@media (min-width: 200px) {
+  .acerca .vista {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  .acerca .vista {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.acerca .contenidoacerca {
+  width: 50%;
+}
+@media (max-width: 1200px) {
+  .acerca .contenidoacerca {
+    width: 100%;
+    padding: 0 1.5rem;
+    padding-top: 4rem;
+    text-align: center;
+  }
+}
+.acerca .contenidoacerca div {
+  width: 100%;
+}
+@media (max-width: 1200px) {
+  .acerca .contenidoacerca div {
+    width: 70vw;
+    margin: 0 auto;
+  }
+}
+.acerca .contenidoacerca p {
+  font-weight: 400;
+  font-size: 2.2rem;
+  margin: 1rem 0 5.5rem 0;
+}
+.acerca .contenidoacerca a {
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  background: #fffa90;
+  color: #0a1417;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.acerca .contenidoacerca a:hover {
+  padding: 1.3rem 1.6rem;
+  transition: 0.2s all;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #0a1417;
+  padding: 8rem 0;
+}
+.contacto .vista {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contacto div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.contacto ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6rem;
+  margin-block-end: 2rem;
+}
+@media (max-width: 1200px) {
+  .contacto ul {
+    flex-direction: column;
+  }
+}
+.contacto ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  .contacto ul li {
+    margin-bottom: 4rem;
+  }
+}
+.contacto ul li div {
+  width: 6rem;
+}
+.contacto ul li p {
+  color: #f5d64e;
+  margin-top: 2rem;
+  font-size: 1, 5rem;
+}
+@media (max-width: 1200px) {
+  .contacto ul li p {
+    font-size: 2rem;
+  }
+}
+
+.productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ffddddd3;
+  padding: 8rem 0;
+  text-align: center;
+}
+.productos .vista {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.productos h2 {
+  font-size: 3.5rem;
+  color: #0a1417;
+  text-transform: uppercase;
+}
+.productos ul {
+  width: 100%;
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 1200px) {
+  .productos ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.productos ul li {
+  flex: 0 0 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fdecb8ea;
+  border-radius: 3.5rem;
+  padding: 2.5rem;
+  margin-bottom: 5rem;
+  box-shadow: 4px 0px 17px 16px rgba(10, 20, 23, 0.3);
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .productos ul li {
+    width: 400px;
+  }
+}
+@media (max-width: 575px) {
+  .productos ul li {
+    width: 300px;
+  }
+}
+.productos ul li div {
+  width: 15rem;
+  height: auto;
+}
+.productos ul li span:first-of-type {
+  color: #0a1417;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-top: 1.9rem;
+}
+@media (max-width: 1200px) {
+  .productos ul li span:first-of-type {
+    font-size: 6vw;
+  }
+}
+.productos ul li span:last-of-type {
+  color: #0a1417;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 2rem 0;
+}
+.productos ul li button {
+  background: #ffddddd3;
+  color: #0a1417;
+  text-transform: uppercase;
+  padding: 0.8rem 4rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: "Quicksand", sans-serif;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=styles.css.map */
