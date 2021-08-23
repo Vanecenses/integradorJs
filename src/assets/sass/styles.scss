@@ -12,13 +12,13 @@
 }
 
 header {
-    background-image: url(../img/fondo.jpg);
+    background-image: url(../img/fondo2.jpg);
     display: flex;
     justify-content: center;
     padding: 3rem 0 8rem 0;
 
     @media(max-width: 1200px){
-        padding: 3rem 1.5rem 0 1.5rem;
+        padding: 3rem 4rem 0 1.5rem;
     }
 
     .vista {
@@ -26,7 +26,7 @@ header {
     }
 
     .logo {
-       @include tamañoImg(15rem, auto);
+       @include tamañoImg(18rem, auto);
 
        @media(max-width: 475px){
             @include tamañoImg(9rem, auto);
@@ -52,14 +52,14 @@ header {
             text-transform: uppercase;
 
             a {
-                color: $main-fondo;
+                color: $main-Amarillo;
                 font-weight: bold;
                 font-size: 1.6rem;
 
                 &:hover{
                     text-decoration: underline;
-                    text-underline-position: under;
                     transition: .2s all;
+                    color: cornsilk;
                 }
             }
 
@@ -143,8 +143,6 @@ header {
             }
         }
         
-
-
         p {
             font-weight: 400;
             font-size: 2.2rem;
@@ -230,7 +228,7 @@ header {
     }
 
     h2 {
-        font-size: 3.5rem;
+        font-size: 3rem;
         color: $main-CasiNagro;
         text-transform: uppercase;
     }
@@ -276,14 +274,14 @@ header {
                     margin-top: 1.9rem;
 
                     @media (max-width: 1200px){
-                        font-size: 6vw;
+                        font-size: 5vw;
                     }
                 }
 
                 &:last-of-type {
                     color: $main-CasiNagro;
                     text-transform: uppercase;
-                    font-size: 2.5rem;
+                    font-size: 1.2rem;
                     font-weight: 700;
                     margin: 2rem 0;
                 }
@@ -347,6 +345,11 @@ footer {
             h2 {
                 font-size: 2.2rem;
                 margin-bottom: 1.8rem;
+            }
+
+            a {
+                font-size: 2rem;
+                color: $main-RojoOscuro;
             }
 
             span {

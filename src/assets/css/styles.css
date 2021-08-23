@@ -45,14 +45,14 @@ main {
 }
 
 header {
-  background-image: url(../img/fondo.jpg);
+  background-image: url(../img/fondo2.jpg);
   display: flex;
   justify-content: center;
   padding: 3rem 0 8rem 0;
 }
 @media (max-width: 1200px) {
   header {
-    padding: 3rem 1.5rem 0 1.5rem;
+    padding: 3rem 4rem 0 1.5rem;
   }
 }
 header .vista {
@@ -62,7 +62,7 @@ header .vista {
   align-items: center;
 }
 header .logo {
-  width: 15rem;
+  width: 18rem;
   height: auto;
 }
 @media (max-width: 475px) {
@@ -94,14 +94,14 @@ header nav li {
   text-transform: uppercase;
 }
 header nav li a {
-  color: #f3c52cde;
+  color: #f5d64e;
   font-weight: bold;
   font-size: 1.6rem;
 }
 header nav li a:hover {
   text-decoration: underline;
-  text-underline-position: under;
   transition: 0.2s all;
+  color: cornsilk;
 }
 header nav li:nth-of-type(4) div {
   width: 2rem;
@@ -279,7 +279,7 @@ header nav li:nth-of-type(4) div {
   align-items: center;
 }
 .productos h2 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: #0a1417;
   text-transform: uppercase;
 }
@@ -335,13 +335,13 @@ header nav li:nth-of-type(4) div {
 }
 @media (max-width: 1200px) {
   .productos ul li span:first-of-type {
-    font-size: 6vw;
+    font-size: 5vw;
   }
 }
 .productos ul li span:last-of-type {
   color: #0a1417;
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
   margin: 2rem 0;
 }
@@ -409,6 +409,10 @@ footer section div {
 footer section div h2 {
   font-size: 2.2rem;
   margin-bottom: 1.8rem;
+}
+footer section div a {
+  font-size: 2rem;
+  color: #e03314;
 }
 footer section div span {
   font-size: 1.5rem;
