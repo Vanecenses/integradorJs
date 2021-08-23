@@ -45,7 +45,7 @@ main {
 }
 
 header {
-  background-image: url(../img/fondo4.jpg);
+  background-image: url(../img/fondo.jpg);
   display: flex;
   justify-content: center;
   padding: 3rem 0 8rem 0;
@@ -94,7 +94,7 @@ header nav li {
   text-transform: uppercase;
 }
 header nav li a {
-  color: #0a1417;
+  color: #f3c52cde;
   font-weight: bold;
   font-size: 1.6rem;
 }
@@ -356,6 +356,62 @@ header nav li:nth-of-type(4) div {
   border: none;
   border-radius: 2rem;
   cursor: pointer;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem 0 4rem 0;
+  background: #fffa90;
+  color: #0a1417;
+  text-transform: uppercase;
+}
+footer .vista {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .ramita {
+  width: 30rem;
+  height: auto;
+  margin-bottom: 4rem;
+}
+@media (max-width: 1200px) {
+  footer .ramita {
+    width: 70vw;
+    height: auto;
+  }
+}
+footer section {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+@media (max-width: 1200px) {
+  footer section {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+footer section div {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 1200px) {
+  footer section div {
+    margin-bottom: 3rem;
+  }
+}
+footer section div h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.8rem;
+}
+footer section div span {
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
