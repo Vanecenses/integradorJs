@@ -45,7 +45,8 @@
                         <li>
                             <a href="#canasto">
                                     <div>
-                                        <img src="./assets/img/canasto.png" alt="canasto">
+                                        <img src="./assets/img/canasto.png"alt="canasto">
+                                        <span id="mercaderia"></span>
                                     </div>
                             </a>
                         </li>
@@ -64,7 +65,7 @@
                     </p>
                 </div>
                 <div class="contenidoacerca">
-                    <div>
+                  <div>
                         <img src="./assets/img/ilustracion1.png" alt="panesimagen2">
                     </div>
                 </div>
@@ -99,14 +100,14 @@
         <section class="productos" id="productos">
             <div class="vista">
                 <h2>Los mas pedidos de la temporada</h2>
-                <ul>
+                <ul id="list-products">
                     <li>
                         <div>
                             <img src="./assets/img/mercaderia5.jpg" alt="panlactal">
                         </div>
-                        <span>Pan lactal<br> Varios</span>
+                        <span>Pan lactal</span>
                         <span>$250</span>
-                        <button>Comprar</button>
+                        <button onclick={addProduct("panlactal",250,1)}>Comprar</button>
                     </li>
                     <li>
                         <div>
@@ -114,7 +115,7 @@
                         </div>
                         <span>Pan de Campo</span>
                         <span>$300</span>
-                        <button>Comprar</button>
+                        <button onclick={addProduct("pandecampo",300,1)}>Comprar</button>
                     </li>
                     <li>
                         <div>
@@ -122,36 +123,58 @@
                         </div>
                         <span>Pan arabe <br> Por docena</span>
                         <span>$400</span>
-                        <button>Comprar</button>
+                        <button onclick={addProduct("panarabe",400,1)}>Comprar</button>
                     </li>
                     <li>
                         <div>
                             <img src="./assets/img/mercaderia1.jpg" alt="bizcochos">
                         </div>
-                        <span>Biscochos salados<br> Por kilo</span>
-                        <span>$800</span>
-                        <button>Comprar</button>
+                        <span>Biscochos salados<br> Por 1/4kg</span>
+                        <span>$300</span>
+                        <button onclick={addProduct("bizcochos",300,1)}>Comprar</button>
                     </li>
                     <li>
                         <div>
-                            <img src="./assets/img/mercaderia6.jpg" alt="alfajores de maicena">
+                            <img src="./assets/img/mercaderia6.jpg" alt="alfajoresdemaicena">
                         </div>
                         <span>Alfajorcitos de maicena <br> Por docena</span>
                         <span>$500</span>
-                        <button>Comprar</button>
+                        <button onclick={addProduct("alfajoresdemaicena",500,1)}>Comprar</button>
                     </li>
                     <li>
                         <div>
-                            <img src="./assets/img/mercaderia3.jpg" alt="alfajor artesanal">
+                            <img src="./assets/img/mercaderia3.jpg" alt="alfajorartesanal">
                         </div>
                         <span>Alfajor artesanal <br>Por docena</span>
                         <span>$700</span>
                         <span>Solo chocolate blanco</span>
-                        <button>Comprar</button>
+                        <button onclick={addProduct("alfajorartesanal",700,1)}>Comprar</button>
                         <span>Solo chocolate blanco<span>
                         </div>
                     </li>
                 </ul>
+            </div>
+        </section>
+        <section class="cartList" id="cartList">
+            <div class="vista">
+                <h2>Dulces Artesanos, sabor y tradición</h2>
+                <p>
+                    Ya puedes comprar en nuestra tienda online y te lo entregamos en casa o donde tu nos digas <br>
+                    en un plazo máximo de 24/48 horas a toda España para que disfrutes del AUTÉNTICO PAN, BOLLERÍA Y DULCES ARTESANOS <br>
+                    recién horneados con un solo click
+                </p>
+                <div class="cart-wrapper" id="cartWrapper">
+                    <div class="emptyProductsMessage">
+                        No tienes productos seleccionados
+                    </div>
+                </div>
+                <div class="total-items">
+                        <span>
+                            <strong>Total:</strong>
+                            <span id="totalProducts"></span>$
+                        </span>
+                </div>
+                <button>finalizar compra</button>
             </div>
         </section>
         <footer>
@@ -176,5 +199,6 @@
         </footer>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
