@@ -11,7 +11,6 @@ const setCount = () => {
         totalCount += products[item].count
     }
 
-    // totalItems.innerText = `${totalCount}`
     totalItems.innerText = totalCount.toString()
     return totalCount
 }
@@ -23,7 +22,6 @@ const totalPrice = () => {
         totalCart += products[item].price * products[item].count
     }
 
-    // totalProducts.innerText = `${totalCart}`
     totalProducts.innerText = totalCart.toString()
     return totalCart
 }

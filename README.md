@@ -11,3 +11,5 @@ npm run sass
 * CSS
 * FlexBox
 * Sass
+* java Script
+
